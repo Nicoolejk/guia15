@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Navegacion.Gas"
+             Title="Gas">
+    <ScrollView>
+        <StackLayout>
+            <VerticalStackLayout
+        Spacing="60"
+            Padding="20"
+            VerticalOptions="Center"
+            Background="yellow">
+
+
+                <Image
+                Source="gass.png"
+                SemanticProperties.Description="Cute dot net bot waving hi to you!"
+                HeightRequest="200"
+                HorizontalOptions="Center" />
+
+
+                <Label Text="Cantidad en galones" />
+                <Entry x:Name="txtCantidadGalones" Keyboard="Numeric" />
+
+                <Label Text="Precio por litro" />
+                <Entry x:Name="txtPrecioLitro" Keyboard="Numeric" />
+
+                <Button Text="Calcular" Clicked="Calcular_Clicked" />
+
+                <Label x:Name="lblResultado" />
+            </VerticalStackLayout>
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>
